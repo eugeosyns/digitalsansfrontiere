@@ -1,0 +1,61 @@
+// scss/main.scss
+
+// ================================
+// 1. TES COULEURS HEX
+// ================================
+$primary: #161C26;
+$secondary: #222831;
+$success: #393E46;
+$danger: #ef4444;
+$warning: #DC3545;
+$info: #EEEEEE;
+$light: #f8fafc;
+$dark: #020617;
+
+// ================================
+// 2. AUTRES VARIABLES
+// ================================
+$body-bg: #f1f5f9;
+$body-color: #020617;
+
+$border-radius: 1rem;
+$border-radius-sm: .5rem;
+$border-radius-lg: 1.5rem;
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, sans-serif;
+
+// ================================
+// 3. BOOTSTRAP
+// ================================
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// ================================
+// 4. OVERRIDE DES VARIABLES CSS RGB
+//    (après l'import, dans :root)
+// ================================
+:root {
+    --bs-primary-rgb: #{red($primary)},
+    #{green($primary)},
+    #{blue($primary)};
+    --bs-secondary-rgb: #{red($secondary)},
+    #{green($secondary)},
+    #{blue($secondary)};
+    --bs-success-rgb: #{red($success)},
+    #{green($success)},
+    #{blue($success)};
+    --bs-danger-rgb: #{red($danger)},
+    #{green($danger)},
+    #{blue($danger)};
+    --bs-warning-rgb: #{red($warning)},
+    #{green($warning)},
+    #{blue($warning)};
+    --bs-info-rgb: #{red($info)},
+    #{green($info)},
+    #{blue($info)};
+    --bs-light-rgb: #{red($light)},
+    #{green($light)},
+    #{blue($light)};
+    --bs-dark-rgb: #{red($dark)},
+    #{green($dark)},
+    #{blue($dark)};
+}

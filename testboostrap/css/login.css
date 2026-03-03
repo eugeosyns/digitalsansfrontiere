@@ -1,0 +1,57 @@
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    >img {
+        height: 100vh;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    div {
+        width: 500px;
+        height: 48px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    input,
+    button,
+    select {
+        border-radius: 6px !important;
+        border: 1px solid #DEDEDE;
+    }
+
+}
+
+.fondcivilite {
+    display: flex;
+    background: #f1f1f1;
+    border-radius: 4px;
+    padding: 6px;
+    gap: 6px;
+}
+
+.fondcivilite .btn {
+    flex: 1;
+    color: #999;
+    border: none;
+    background: #f1f1f1 !important;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}
+
+.btn-check:checked+.btn {
+    background: white !important;
+    color: black !important;
+
+}

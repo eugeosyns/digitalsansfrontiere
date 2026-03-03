@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepises</title>
+
+    <link rel="stylesheet" href="boostrap-custom.css">
+    <link rel="stylesheet" href="css/personalisation.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+
+                <a class="navbar-brand d-flex align-items-center gap-2" href="acceuil.html">
+                    <img src="/images/logo.svg" alt="logo" height="40">
+                    <h2>DigiSIAD</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto gap-5 my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jeudi.html">jeudi du siad</a>
+                        </li>
+                        <li class="nav-item dropdown" aria-current="page">
+                            <a class="nav-link active" href="#">
+                                Entreprise
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Métiers</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-info">compte <img src="/images/Icon-compte.svg" alt="" height="20"></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="d-flex flex-column w-75 mx-auto mt-2 gap-3">
+        <h2 class="titre">Entreprises</h2>
+
+
+        <div class="d-flex flex-wrap gap-3">
+            <!-- Crée une card avec les infos de l'entreprise redirigeant vers la page du pdf-->
+
+            <div class="card bg-info" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="d-flex gap-2 align-items-center">
+                        <div class="logo">
+                            <img src="/images/logoauchan.svg" alt="">
+                        </div>
+                        <h5 class="card-title titreentreprise">Auchan</h5>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column gap-0">
+                            <p class="infocard">06 06 06 06 06</p>
+                            <p>Croix</p>
+                        </div>
+                        <button class="btn bg-blue w-50 h-50">voir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

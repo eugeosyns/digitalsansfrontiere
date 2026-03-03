@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+
+    <link rel="stylesheet" href="boostrap-custom.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/personalisation.css">
+</head>
+
+<body>
+    <main>
+        <img src="/images/signin.png" alt="">
+        <div class="mx-auto">
+
+            <div class="d-flex align-items-center gap-2 mb-5">
+                <img src="/images/logo.svg" alt="logo" height="60">
+                <h1>DigiSIAD</h1>
+            </div>
+
+
+
+            <!--Formulaire inscription-->
+            <form>
+                <section class="premier" id="première">
+                    <div class="mb-3">
+                        <label>Civilité</label>
+                        <div class="fondcivilite">
+                            <input type="radio" class="btn-check" name="civilite" id="madame" autocomplete="off"
+                                checked>
+                            <label class="btn bg-info" for="madame">Madame</label>
+
+                            <input type="radio" class="btn-check" name="civilite" id="monsieur" autocomplete="off">
+                            <label class="btn bg-info" for="monsieur">Monsieur</label>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Prénom</label>
+                        <input type="text" class="form-control bg-info" id="Prenom" placeholder="Prénom" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Nom</label>
+                        <input type="password" class="form-control bg-info" id="Password" placeholder="Nom" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Age</label>
+                        <input type="date" class="form-control bg-info" id="age" placeholder="06/29/2024" required>
+                    </div>
+
+                    <button class="btn bg-blue w-100" id="premierbouton">suivant</button>
+                </section>
+
+
+
+
+                <section id="deuxieme">
+                    <div class="mb-5">
+                        <label for="exampleInputPassword1" class="form-label">Statut</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="statut" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Étudiant
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="statut">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Intervenant
+                            </label>
+                        </div>
+                    </div>
+
+                    <select class="form-select bg-info" aria-label="Default select example">
+                        <option selected>2026-2027</option>
+                        <option>2025-2026</option>
+                        <option>2024-2025</option>
+                        <option>2023-2024</option>
+                        <option>2022-2023</option>
+                        <option>2021-2022</option>
+                        <option>2020-2021</option>
+                        <option>2019-2020</option>
+                        <option>2018-2019</option>
+                        <option>2017-2018</option>
+                        <option>2016-2017</option>
+                        <option>2015-2016</option>
+                        <option>2014-2015</option>
+                        <option>2013-2014</option>
+                        <option>2012-2013</option>
+                        <option>2011-2012</option>
+                        <option>2010-2011</option>
+                        <option>2009-2010</option>
+                        <option>2008-2009</option>
+                        <option>2007-2008</option>
+                        <option>2006-2007</option>
+                        <option>2005-2006</option>
+                        <option>2004-2005</option>
+                        <option>2003-2004</option>
+                        <option>2002-2003</option>
+                        <option>2001-2002</option>
+                        <option>2000-2001</option>
+                        <option>1999-2000</option>
+                        <option>1998-1999</option>
+                        <option>1997-1998</option>
+                        <option>1996-1997</option>
+                        <option>1995-1996</option>
+                        <option>1994-1995</option>
+                        <option>1993-1994</option>
+                        <option>1992-1993</option>
+                        <option>1991-1992</option>
+                    </select>
+
+                    <select class="form-select bg-info" aria-label="Default select example">
+                        <option selected>L3</option>
+                        <option value="1">M1</option>
+                        <option value="2">M1 ALTERNANCE</option>
+                        <option value="3">M2 BI</option>
+                        <option value="4">M2 BI ALTERNACE</option>
+                        <option value="5">M2 BIMST</option>
+                        <option value="6">M2 DS</option>
+                        <option value="7">M2 DS ALTERNACE</option>
+                    </select>
+                    <button class="btn bg-blue w-100" id="secondbouton">suivant</button>
+                </section>
+
+
+
+
+                <section id="third">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Mail</label>
+                        <input type="mail" class="form-control bg-info" id="mail" placeholder="exemple@gmail.com"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control bg-info" id="password" placeholder="Password"
+                            required>
+                    </div>
+
+                    <button type="submit" class="btn bg-blue w-100 premierbouton">terminer</button>
+                </section>
+            </form>
+            <hr>
+            <p>Vous avez déja un compte ? <a href="login.html">Connection</a></p>
+        </div>
+    </main>
+
+    <script src="js/inscription.js"></script>
+</body>
+
+</html>
