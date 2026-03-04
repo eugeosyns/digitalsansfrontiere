@@ -55,3 +55,20 @@ form {
     color: black !important;
 
 }
+
+
+
+
+
+@media (max-width: 768px) {
+    main>img {
+        display: none;
+    }
+
+    form {
+        div {
+            width: 100%;
+            height: 48px;
+        }
+    }
+}

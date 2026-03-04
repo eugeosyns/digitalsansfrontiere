@@ -32,7 +32,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="jeudi.html">jeudi du siad</a>
                         </li>
-                        <li class="nav-item dropdown" aria-current="page">
+                        <li class="nav-item" aria-current="page">
                             <a class="nav-link active" href="#">
                                 Entreprise
                             </a>
@@ -41,7 +41,7 @@
                             <a class="nav-link">Métiers</a>
                         </li>
                     </ul>
-                    <button class="btn btn-info">compte <img src="/images/Icon-compte.svg" alt="" height="20"></button>
+                    <button class="btn bg-orange">compte <img src="/images/Icon-compte.svg" alt="" height="20"></button>
                 </div>
             </div>
         </nav>
@@ -52,16 +52,45 @@
         <h2 class="titre">Entreprises</h2>
 
 
-        <div class="d-flex flex-wrap gap-3">
+        <div class="d-flex flex-wrap gap-4">
             <!-- Crée une card avec les infos de l'entreprise redirigeant vers la page du pdf-->
 
             <div class="card bg-info" style="width: 18rem;">
                 <div class="card-body">
-                    <div class="d-flex gap-2 align-items-center">
-                        <div class="logo">
-                            <img src="/images/logoauchan.svg" alt="">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-2 align-items-center">
+                            <div class="logo">
+                                <img src="/images/logoauchan.svg" alt="">
+                            </div>
+                            <h5 class="card-title titreentreprise">Auchan</h5>
                         </div>
-                        <h5 class="card-title titreentreprise">Auchan</h5>
+                        <div class=" d-flex align-items-center gap-1">
+                            <p class="mb-0">03/03/2024</p>
+                            <div class="pastille bg-success"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column gap-0">
+                            <p class="infocard">06 06 06 06 06</p>
+                            <p>Croix</p>
+                        </div>
+                        <button class="btn bg-blue w-50 h-50">voir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-warning" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-2 align-items-center">
+                            <div class="logo">
+                                <img src="/images/logoauchan.svg" alt="">
+                            </div>
+                            <h5 class="card-title titreentreprise">Auchan</h5>
+                        </div>
+                        <div class=" d-flex align-items-center gap-1">
+                            <p class="mb-0">+2ans</p>
+                            <div class="pastille bg-danger"></div>
+                        </div>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-flex flex-column gap-0">
