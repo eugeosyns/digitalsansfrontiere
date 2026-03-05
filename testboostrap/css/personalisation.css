@@ -15,7 +15,6 @@
 .navbar-nav .nav-link.active {
     border-radius: 24px;
     background: rgba(83, 95, 244, 0.10);
-
     color: #535FF4;
     font-family: spectral;
     font-size: 24px;
@@ -94,9 +93,6 @@
     padding: 12.5px;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 .titreentreprise {
@@ -133,4 +129,117 @@ body {
         url("/images/fondlosange.svg");
 
     background-repeat: repeat;
+}
+
+
+.tag {
+    padding: 4px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 6px 12px;
+}
+
+.taggreen {
+    color: #00A88B;
+    border-radius: 20px;
+    border: 1px solid var(--Background-Secondary, #EEE);
+    background: rgba(0, 168, 139, 0.10);
+}
+
+.tagred {
+    color: #FF3B55;
+    border-radius: 20px;
+    border: 1px solid var(--Background-Secondary, #EEE);
+    background: rgba(255, 59, 85, 0.10);
+}
+
+.tagblue {
+    color: #535FF4;
+    border-radius: 20px;
+    border: 1px solid var(--Background-Secondary, #EEE);
+    background: rgba(83, 95, 244, 0.10);
+}
+
+.bgtag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 26px;
+    border: 1px solid var(--Background-Secondary, #EEE);
+}
+
+.bgred {
+    padding: 8px;
+    background: rgba(0, 168, 139, 0.10);
+}
+
+.bgblue {
+    padding: 8px;
+    background: rgba(83, 95, 244, 0.10);
+}
+
+.bgreen {
+    padding: 8px;
+    background: rgba(255, 59, 85, 0.10);
+
+}
+
+.bgorange {
+    background: rgba(255, 92, 46, 0.10);
+}
+
+
+
+.date {
+    color: #00A88B;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Marianne;
+    font-size: 10px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.depasser {
+    color: #DC3545;
+}
+
+.cardoffre {
+    width: 32%;
+
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+}
+
+.liens {
+
+    p,
+    a {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .cardoffre {
+        width: 100%;
+    }
 }

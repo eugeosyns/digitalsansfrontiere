@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light pb-0 pt-0">
             <div class="container-fluid">
 
                 <a class="navbar-brand d-flex align-items-center gap-2" href="acceuil.html">
@@ -27,13 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav mx-auto gap-5 my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Offres</a>
+                            <a class="nav-link" href="offres.html">Offres</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="jeudi.html">jeudi du siad</a>
                         </li>
-                        <li class="nav-item" aria-current="page">
-                            <a class="nav-link active" href="#">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Entreprises.html" aria-current="page">
                                 Entreprise
                             </a>
                         </li>
@@ -49,13 +49,17 @@
 
 
     <main class="d-flex flex-column w-75 mx-auto mt-2 gap-3">
-        <h2 class="titre">Entreprises</h2>
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="titre">Entreprises</h2>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
 
-
-        <div class="d-flex flex-wrap gap-4">
+        <div class="d-flex flex-wrap gap-3">
             <!-- Crée une card avec les infos de l'entreprise redirigeant vers la page du pdf-->
 
-            <div class="card bg-info" style="width: 18rem;">
+            <div class="card bg-info cardoffre">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-flex gap-2 align-items-center">
@@ -65,7 +69,7 @@
                             <h5 class="card-title titreentreprise">Auchan</h5>
                         </div>
                         <div class=" d-flex align-items-center gap-1">
-                            <p class="mb-0">03/03/2024</p>
+                            <p class="mb-0 date">03/03/2024</p>
                             <div class="pastille bg-success"></div>
                         </div>
                     </div>
@@ -78,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-warning" style="width: 18rem;">
+            <div class="card bg-info cardoffre">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-flex gap-2 align-items-center">
@@ -88,7 +92,53 @@
                             <h5 class="card-title titreentreprise">Auchan</h5>
                         </div>
                         <div class=" d-flex align-items-center gap-1">
-                            <p class="mb-0">+2ans</p>
+                            <p class="mb-0 date">03/03/2024</p>
+                            <div class="pastille bg-success"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column gap-0">
+                            <p class="infocard">06 06 06 06 06</p>
+                            <p>Croix</p>
+                        </div>
+                        <button class="btn bg-blue w-50 h-50">voir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-info cardoffre">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-2 align-items-center">
+                            <div class="logo">
+                                <img src="/images/logoauchan.svg" alt="">
+                            </div>
+                            <h5 class="card-title titreentreprise">Auchan</h5>
+                        </div>
+                        <div class=" d-flex align-items-center gap-1">
+                            <p class="mb-0 date">03/03/2024</p>
+                            <div class="pastille bg-success"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column gap-0">
+                            <p class="infocard">06 06 06 06 06</p>
+                            <p>Croix</p>
+                        </div>
+                        <button class="btn bg-blue w-50 h-50">voir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-warning cardoffre">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-2 align-items-center">
+                            <div class="logo">
+                                <img src="/images/logoauchan.svg" alt="">
+                            </div>
+                            <h5 class="card-title titreentreprise">Auchan</h5>
+                        </div>
+                        <div class=" d-flex align-items-center gap-1">
+                            <p class="mb-0 date depasser">+2 ans</p>
                             <div class="pastille bg-danger"></div>
                         </div>
                     </div>
