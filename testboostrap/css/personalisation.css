@@ -72,10 +72,20 @@
 
 .blue {
     color: #535FF4;
+}
+
+.moisjeudi {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
+}
+
+.size14 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .tertiary {
@@ -187,7 +197,7 @@ body {
 }
 
 .bgorange {
-    background: rgba(255, 92, 46, 0.10);
+    background: rgba(255, 92, 46, 0.10) !important;
 }
 
 
@@ -242,4 +252,42 @@ body {
     .cardoffre {
         width: 100%;
     }
+}
+
+
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table,
+td,
+th {
+    border: 1px solid #b6ada0;
+}
+
+td,
+th {
+    padding: 4px 6px;
+}
+
+th {
+    background: #FDF1DF;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    border: 1px solid #b6ada0;
+}
+
+tbody {
+    background-color: white;
+}
+
+table tr:nth-child(odd) {
+    background-color: #EEEEEE;
+    /* couleur des lignes paires */
 }
