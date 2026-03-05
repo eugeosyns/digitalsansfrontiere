@@ -5,6 +5,8 @@ const partie1 = document.getElementById('première');
 const partie2 = document.getElementById('deuxieme');
 const partie3 = document.getElementById('third');
 
+const fond = document.getElementById('fond');
+
 
 partie2.hidden = true;
 partie3.hidden = true;
@@ -28,6 +30,7 @@ boutton1.addEventListener("click", (e) => {
     if (valide) {
         partie1.hidden = true;
         partie2.hidden = false;
+        fond.src = "images/login2.png"
     }
 });
 
@@ -49,5 +52,6 @@ boutton2.addEventListener("click", (e) => {
     if (valide) {
         partie2.hidden = true;
         partie3.hidden = false;
+        fond.src = "images/login3.png"
     }
 });
