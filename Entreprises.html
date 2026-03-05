@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg bg-light pb-0 pt-0">
             <div class="container-fluid">
 
-                <a class="navbar-brand d-flex align-items-center gap-2" href="/digitalsansfrontiere/acceuil.html">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="acceuil.html">
                     <img src="images/logo.svg" alt="logo" height="40">
                     <h2>DigiSIAD</h2>
                 </a>
@@ -27,13 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav mx-auto gap-5 my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="offres.html">Offres</a>
+                            <a class="nav-link active" aria-current="page" href="offres.html">Offres</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="jeudi.html">jeudi du siad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="Entreprises.html" aria-current="page">
+                            <a class="nav-link" href="Entreprises.html">
                                 Entreprise
                             </a>
                         </li>
@@ -41,7 +41,17 @@
                             <a class="nav-link" href="metiers.html">Métiers</a>
                         </li>
                     </ul>
-                    <button class="btn bg-orange">compte <img src="images/Icon-compte.svg" alt="" height="20"></button>
+                    <div class="dropdown">
+                        <button class="btn bg-orange dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            compte <img src="images/Icon-compte.svg" alt="" height="20">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="compte.html">Compte</a></li>
+                            <li><a class="dropdown-item" href="changermdp.html">Changer mdp</a></li>
+                            <li><a class="dropdown-item" href="">Déconnexion</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -153,6 +163,9 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
