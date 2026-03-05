@@ -12,15 +12,20 @@
 
 <body>
     <main>
-        <img src="/images/mdp.png" alt="">
+        <img src="images/changermdp.png" alt="">
         <div class="mx-auto">
-            <div class="d-flex align-items-center gap-2 mb-5"><img src="/images/logo.svg" alt="logo" height="60">
+            <div class="d-flex align-items-center gap-2 mb-5"><img src="images/logo.svg" alt="logo" height="60">
                 <h1>DigiSIAD</h1>
             </div>
             <!--Formulaire connexion-->
             <form>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Login</label>
+                    <label for="exampleInputEmail1" class="form-label">Adresse mail</label>
+                    <input type="email" class="form-control bg-info" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">comfirmation adresse mail</label>
                     <input type="email" class="form-control bg-info" id="exampleInputEmail1"
                         aria-describedby="emailHelp" placeholder="Email">
                 </div>
@@ -29,9 +34,13 @@
                     <input type="password" class="form-control bg-info" id="exampleInputPassword1"
                         placeholder="Password">
                 </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">comfirmation password</label>
+                    <input type="password" class="form-control bg-info" id="exampleInputPassword1"
+                        placeholder="Password">
+                </div>
 
-                <button type="submit" class="btn bg-blue w-100">Connexion</button>
-                <p><a href="inscription.html">Mots de passe oublié</a></p>
+                <button type="submit" class="btn bg-danger w-100">valider</button>
 
                 <hr>
             </form>
