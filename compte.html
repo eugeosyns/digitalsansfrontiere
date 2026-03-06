@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compte</title>
+
     <link rel="stylesheet" href="testboostrap/boostrap-custom.css">
     <link rel="stylesheet" href="testboostrap/css/personalisation.css">
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg bg-light pb-0 pt-0">
             <div class="container-fluid">
@@ -18,90 +20,135 @@
                     <img src="images/logo.svg" alt="logo" height="40">
                     <h2>DigiSIAD</h2>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarScroll">
+
                     <ul class="navbar-nav mx-auto gap-5 my-2 my-lg-0 navbar-nav-scroll">
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="offres.html">Offres</a>
+                            <a class="nav-link" href="offres.html">Offres</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="jeudi.html">jeudi du siad</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="Entreprises.html">
-                                Entreprises
-                            </a>
+                            <a class="nav-link" href="Entreprises.html">Entreprises</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="metiers.html">Métiers</a>
                         </li>
+
                     </ul>
+
                     <div class="dropdown">
-                        <button class="btn bg-orange dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            compte <img src="images/Icon-compte.svg" alt="" height="20">
+                        <button class="btn bg-orange dropdown-toggle" type="button" data-bs-toggle="dropdown">
+
+                            compte
+                            <img src="images/Icon-compte.svg" height="20">
+
                         </button>
+
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="compte.html">Compte</a></li>
-                            <li><a class="dropdown-item" href="changermdp.html">Changer mdp</a></li>
-                            <li><a class="dropdown-item" href="">Déconnexion</a></li>
+
+                            <li>
+                                <a class="dropdown-item" href="compte.html">Compte</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="changermdp.html">
+                                    Changer mdp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="">Déconnexion</a>
+                            </li>
+
                         </ul>
                     </div>
+
                 </div>
             </div>
         </nav>
     </header>
 
 
-    <main class="d-flex flex-column w-75 mx-auto mt-2 gap-3">
+    <main class="d-flex flex-column w-75 mx-auto mt-3 gap-4">
+
         <div class="d-flex justify-content-between align-items-center">
             <h2 class="titre">Compte</h2>
         </div>
-        <div class="d-flex gap-5">
-            <div class="d-flex w-100">
-                <div class="flex-column w-100">
-                    <div class="d-flex flex-column gap-2">
-                        <label for="exampleInputPassword1" class="form-label rounded-1">Nom</label>
-                        <h4 class="form-control bg-info">nom</h4>
-                    </div>
-                    <div class="d-flex flex-column gap-2">
-                        <label for="exampleInputPassword1" class="form-label rounded-1">Prénom</label>
-                        <h4 class="form-control bg-info">prenom</h4>
-                    </div>
-                    <div class="d-flex flex-column gap-2">
-                        <label for="exampleInputPassword1" class="form-label rounded-1">Mail</label>
-                        <h4 class="form-control bg-info">email</h4>
-                    </div>
-                    <div class="d-flex flex-column gap-2">
-                        <label for="exampleInputPassword1" class="form-label rounded-1">Cursus</label>
-                        <h4 class="form-control bg-info">cursus</h4>
-                    </div>
-                    <div class="d-flex flex-column gap-2">
-                        <button class="btn bg-blue"><a href="changermdp.html">Changer de mot de passe</a></button>
-                    </div>
-                    <div class="d-flex flex-column gap-2">
-                        <button class="btn btn-danger rounded-1"><a href="changermdp.html">Desinscription</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex flex-column gap-2 w-100">
-                <div class="d-flex flex-column">
-                    <label for="exampleInputPassword1" class="form-label rounded-1">CV</label>
-                </div>
+
+
+        <div class="d-flex flex-wrap flex-row">
+
+
+            <!-- COLONNE INFOS -->
+            <div class="d-flex flex-column w-50 gap-3">
+
                 <div class="d-flex flex-column gap-2">
-                    <label for="exampleInputPassword1" class="form-label rounded-1">Charger un CV</label>
-                    <h4 class="form-control bg-info">CV</h4>
+                    <label class="form-label">Nom</label>
+                    <h4 class="form-control bg-info">nom</h4>
                 </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <label class="form-label">Prénom</label>
+                    <h4 class="form-control bg-info">prenom</h4>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <label class="form-label">Mail</label>
+                    <h4 class="form-control bg-info">email</h4>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <label class="form-label">Cursus</label>
+                    <h4 class="form-control bg-info">cursus</h4>
+                </div>
+
+                <a href="changermdp.html" class="btn bg-blue">
+                    Changer de mot de passe
+                </a>
+
+                <a href="#" class="btn white btn-danger rounded-1">
+                    Désinscription
+                </a>
+
             </div>
+
+
+
+            <!-- COLONNE CV -->
+            <div class="d-flex flex-column w-50 gap-3">
+
+                <div class="d-flex flex-column">
+                    <label class="form-label">CV</label>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <label class="form-label">Charger un CV</label>
+                    <div class="d-flex justify-content-between">
+                        <h4 class="form-control bg-info cv">CV</h4>
+                        <img src="images/doawnload.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

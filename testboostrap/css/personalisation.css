@@ -80,6 +80,10 @@
     color: #535FF4;
 }
 
+.white {
+    color: #FFFFFF;
+}
+
 .moisjeudi {
     font-size: 24px;
     font-style: normal;
@@ -294,4 +298,12 @@ tbody {
 table tr:nth-child(odd) {
     background-color: #EEEEEE;
     /* couleur des lignes paires */
+}
+
+
+
+.cv {
+    border-radius: 24px !important;
+    border: 1px dashed #535FF4 !important;
+    background: rgba(83, 95, 244, 0.10) !important;
 }
