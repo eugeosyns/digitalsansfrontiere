@@ -307,3 +307,15 @@ table tr:nth-child(odd) {
     border: 1px dashed #535FF4 !important;
     background: rgba(83, 95, 244, 0.10) !important;
 }
+
+.imagesactu {
+    width: 400px;
+}
+
+
+
+@media (max-width: 768px) {
+    .imagesactu {
+        width: 300px;
+    }
+}
